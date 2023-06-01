@@ -1,3 +1,9 @@
+# "Incomplete pickle support" Boost.Python bug using Python 3.11
+
+This repo provides examples to reproduce a bug encountered using Boost.Python with Python 3.11.
+It appears to be related to following change introduced in Python 3.11:
+> [bpo-26579](https://bugs.python.org/issue?@action=redirect&bpo=26579): Added `object.__getstate__` which provides the default implementation of the `__getstate__()` method.
+
 ## Build using Python 3.11 environment
 
 ```
