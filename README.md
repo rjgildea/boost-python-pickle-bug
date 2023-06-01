@@ -14,9 +14,7 @@ $ mamba activate boost-py311
 ```
 $ mkdir _build_py311
 $ cd _build_py311
-$ cmake .. \
-  -DPYTHON_INCLUDE_DIR=$(python -c "import sysconfig; print(sysconfig.get_path('include'))") \
-  -DPYTHON_LIBRARY=$(python -c "import sysconfig; print(sysconfig.get_config_var('LIBDIR'))")
+$ cmake ..
 $ make
 ```
 
@@ -44,9 +42,7 @@ $ mamba activate boost-py310
 $ cd ../
 $ mkdir _build_py310
 $ cd _build_py310
-$ cmake .. \
-  -DPYTHON_INCLUDE_DIR=$(python -c "import sysconfig; print(sysconfig.get_path('include'))") \
-  -DPYTHON_LIBRARY=$(python -c "import sysconfig; print(sysconfig.get_config_var('LIBDIR'))")
+$ cmake ..
 $ make
 ```
 
